@@ -32,8 +32,12 @@ Todas las URLs de este documento asumen esa base — reemplazar `<BASE>`.
 
 ## 3. Layout — Stream Deck+ / Mini (pruebas, 8 botones)
 
-Un solo panel, sin carpetas. Cubre lo esencial: elegir tipo de cartilla y
-pantalla completa.
+Los 8 botones no alcanzan para tipo de cartilla + navegación + toggles a la
+vez, así que el botón 8 es una **carpeta** ("Más") con el resto de los
+controles. Los diales del Stream Deck+ **no sirven** para esto — el plugin
+"Web Requests" solo expone acciones de tecla, no de dial.
+
+**Página principal:**
 
 | Botón | Título sugerido | URL |
 |---|---|---|
@@ -44,7 +48,21 @@ pantalla completa.
 | 5 | Tumbling E | `<BASE>/api/remote/key/5` |
 | 6 | Landolt C | `<BASE>/api/remote/key/6` |
 | 7 | HOTV | `<BASE>/api/remote/key/7` |
-| 8 | Pantalla completa | `<BASE>/api/remote/key/f` |
+| 8 | Más (carpeta) | — |
+
+**Dentro de la carpeta "Más":**
+
+| Botón | Título sugerido | URL |
+|---|---|---|
+| Salida | (auto-generado) | — |
+| 1 | Tamaño + | `<BASE>/api/remote/key/ArrowUp` |
+| 2 | Tamaño - | `<BASE>/api/remote/key/ArrowDown` |
+| 3 | Modo (cambia disposición) | `<BASE>/api/remote/key/Space` |
+| 4 | Pantalla completa | `<BASE>/api/remote/key/f` |
+
+"Tamaño +/-" sube/baja el nivel de agudeza visual (o agranda/achica el
+diagrama en modo patologías). "Modo" recorre single → línea → 3 líneas → 5
+líneas → columna.
 
 ## 4. Layout — Stream Deck XL (consultorio, 32 botones)
 
