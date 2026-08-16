@@ -1,0 +1,30 @@
+# Local environment files with credentials — never commit
+.env
+.env.*
+.env.local
+.env.*.local
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Python backend
+backend/__pycache__/
+backend/.venv/
+*.pyc
+
+# Logs
+logs
+*.log
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

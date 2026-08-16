@@ -1,0 +1,9 @@
+/* Optician Sans — SIL Open Font License 1.1, ver OFL-LICENSE.md en esta carpeta.
+   Créditos: ANTI Hamar / Fábio Duarte Martins — github.com/anewtypeofinterference/Optician-Sans */
+@font-face {
+  font-family: 'OpticianSans';
+  src: url('./Optician-Sans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
