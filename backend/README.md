@@ -27,3 +27,7 @@ Ambos endpoints HTTP aceptan GET y POST — GET porque varios plugins gratuitos 
 Con el plugin "HTTP Request" (o equivalente): método GET, URL `http://<ip-de-la-máquina>:8106/api/remote/key/ArrowDown` (por ejemplo, para "siguiente línea"). Repetir un botón por comando.
 
 **Limitación conocida:** `fullscreen-toggle` no puede *activar* pantalla completa desde un comando remoto — los navegadores exigen que `requestFullscreen()` se dispare desde un gesto directo del usuario (clic/tecla real en la página), no desde un mensaje de WebSocket. Sí puede *salir* de pantalla completa remotamente. Para entrar, hay que usar la tecla `f` o el botón en la propia pantalla.
+
+## Preset completo (Stream Deck+ y XL)
+
+Ver [`docs/stream-deck-preset.md`](../docs/stream-deck-preset.md) — tabla de botones lista para copiar/pegar, con el plugin recomendado ("Web Requests" del Marketplace de Elgato) y layouts para 8 botones (Stream Deck+/Mini) y 32 botones (XL).
